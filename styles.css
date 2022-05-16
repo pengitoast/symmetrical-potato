@@ -3,12 +3,26 @@
     --footnavgray: #2d2d30;
     --navbckgrnd-white: #e4dcdc;
     --navblue: #1176b1;
+    --logoWhite: #f0ecec;
+    --searchbtnGray: #464f53;
 }
 body {
     margin: auto;
     padding: 1em;
     background-color: var(--maingray);
     font-family: Arial, Helvetica, sans-serif;
+}
+.mainContainer {
+    margin: auto;
+    padding: 8em;
+    min-width: 60vw;
+    min-height: 80vh;
+    text-align: center;
+}
+#mainLogo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 80pt;
+    color: var(--logoWhite)
 }
 .topNav {
     display: flex;
@@ -20,17 +34,22 @@ body {
     list-style-type: none;
     text-decoration: none;
 }
+a {
+    text-decoration: none;
+}
 .topNavContainer {
     display: flex;
     flex-direction: row;
     margin: auto;
     padding: 1em;
+    min-width: 60vw;
 }
 .footNavContainer {
     display: flex;
     flex-direction: row;
     margin: auto;
     padding: 1em;
+
 }
 .dropdown1 {
     display: inline-block;
@@ -41,3 +60,25 @@ body {
     min-width: 1em;
     box-shadow: 1em;
 }
+.dropdown-content2 {
+    display: none;
+    background-color: var(--navbckgrnd-white);
+    min-width: 1em;
+    box-shadow: 1em;
+}
+.navLinksR {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navLinksL {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.googleSearchBtn {
+    background-color: var(--searchbtnGray);
+    color: var(--logoWhite);
+}
+.luckyBtn {
+    background-color: var(--searchbtnGray);
+    color: var(--logoWhite);
+} 
